@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 10px;
+    position: relative;
+    margin: 0;
+    font-family: 'Cedarville Cursive', cursive;
+    background-color: #fff0f5;
+    color: #333
+  }
+  .topnav {
+    overflow: hidden;
+    background-color: #ffe4e1;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ff69b4;
+  }
+  .topnav a {
+    float: left;
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 2em;
+    color: #ff69b4;
+  }
+  .topnav a:hover {
+    background-color: #ffb6c1;
+    color: #ffffff;
+    border-radius: 12px;
+  }
+  .category-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    padding: 40px 20px;
+    z-index: 1;
+    margin-bottom: 75px;
+    gap: 30px;
+  }
+
+  .catalog-container{
+    margin-top: 50px;
+  }
+  .proDis {
+    overflow: hidden;
+    position: relative;
+    background-color: #ffffff;
+    border: 2px solid #ffb6c1;
+    border-radius: 15px;
+    width: 220px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(255, 182, 193, 0.3);
+  }
+
+  .proDis:hover {
+    transform: scale(1.05);
+  }
+  .proDis img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  .proDis h3 {
+    text-align: center;
+    margin: 10px 0;
+    font-size: 20px;
+  }
+  .proDis p {
+    padding: 0 15px 15px;
+    font-size: 16px;
+    text-align: center;
+  }
+  @media screen and (max-width: 800px) {
+    .club-card {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+  .friend-item {
+    cursor: pointer;
+  }
+  .friend-item:hover {
+    background-color: #f0f0f0;
+  }
+  .col-md-8 {
+    margin-bottom: 50px;
+  }
+  .addToCart {
+    background-color: #ff69b4;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  .remove-item {
+    background-color: #dc143c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 5px;
+  }
+
+  .remove-item:hover {
+    background-color: #b22222;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+<a href="home.html" style="float:right"><b>Home</b></a>
+<a href="aboutus.html" style="float:right"><b>About Us</b></a>
+</div>
+
+<form action="http://47.129.9.35/cs3/checkout.php" method="GET">
+
+<div class="catalog-container">
+<h4>Plushies</h4>
+<div class="category-container">
+  <div class="proDis">
+    <img src="cinna1.jpg" alt="Cinamoroll Plushie">
+    <h3>Cinamoroll Plushie</h3>
+    <button class="addToCart" type="button" data-name="Cinamoroll Plushie" data-price="19250">Add to Cart - &#8369;19250</button>
+  </div>
+  <div class="proDis">
+    <img src="hk1.jpg" alt="Hello Kitty Plushie (Teddy Bear Ver.)">
+    <h3>Hello Kitty Plushie (Teddy Bear Ver.)</h3>
+    <button class="addToCart" type="button" data-name="Hello Kitty Teddy Bear Plushie" data-price="22000">Add to Cart - &#8369;22000</button>
+  </div>
+  <div class="proDis">
+    <img src="hk2.jpg" alt="Hello Kitty Egg Plushie">
+    <h3>Hello Kitty Egg Plushie</h3>
+    <button class="addToCart" type="button" data-name="Hello Kitty Egg Plushie" data-price="20900">Add to Cart - &#8369;20900</button>
+  </div>
+  <div class="proDis">
+    <img src="kuro1.jpg" alt="Kuromi Plushie">
+    <h3>Kuromi Plushie</h3>
+    <button class="addToCart" type="button" data-name="Kuromi Plushie" data-price="20350">Add to Cart - &#8369;20350</button>
+  </div>
+  <div class="proDis">
+    <img src="melo1.jpg" alt="My Melody Plushie">
+    <h3>My Melody Plushie</h3>
+    <button class="addToCart" type="button" data-name="My Melody Plushie" data-price="19800">Add to Cart - &#8369;19800</button>
+  </div>
+</div>
+<h4>Keychains</h4>
+<div class="category-container">
+  <div class="proDis">
+    <img src="assortedkey.png" alt="Assorted Keychains">
+    <h3>Assorted Keychains</h3>
+    <button class="addToCart" type="button" data-name="Assorted Keychains" data-price="11000">Add to Cart - &#8369;11000</button>
+  </div>
+  <div class="proDis">
+    <img src="babycinnakey.png" alt="Baby Cinamoroll Keychain">
+    <h3>Baby Cinamoroll Keychain</h3>
+    <button class="addToCart" type="button" data-name="Baby Cinamoroll Keychain" data-price="12650">Add to Cart - &#8369;12650</button>
+  </div>
+  <div class="proDis">
+    <img src="cinnaandmochakey.jpg" alt="Cinamoroll & Mocha Keychain">
+    <h3>Cinamoroll & Mocha Keychain</h3>
+    <button class="addToCart" type="button" data-name="Cinamoroll & Mocha Keychain" data-price="13750">Add to Cart - &#8369;13750</button>
+  </div>
+  <div class="proDis">
+    <img src="hkeggkey.jpg" alt="Hello Kitty Egg Keychain">
+    <h3>Hello Kitty Egg Keychain</h3>
+    <button class="addToCart" type="button" data-name="Hello Kitty Egg Keychain" data-price="12100">Add to Cart - &#8369;12100</button>
+  </div>
+  <div class="proDis">
+    <img src="taiyakikey.jpg" alt="Cinamoroll Taiyaki Keychain">
+    <h3>Cinamoroll Taiyaki Keychain</h3>
+    <button class="addToCart" type="button" data-name="Cinamoroll Taiyaki Keychain" data-price="13200">Add to Cart - &#8369;13200</button>
+  </div>
+</div>
+<h4>Stationery</h4>
+<div class="category-container">
+  <div class="proDis">
+    <img src="correctiontape.jpg" alt="Correction Tape">
+    <h3>Correction Tape</h3>
+    <button class="addToCart" type="button" data-name="Correction Tape" data-price="5775">Add to Cart - &#8369;5775</button>
+  </div>
+  <div class="proDis">
+    <img src="markers.jpg" alt="Markers">
+    <h3>Markers</h3>
+    <button class="addToCart" type="button" data-name="Markers" data-price="6050">Add to Cart - &#8369;6050</button>
+  </div>
+  <div class="proDis">
+    <img src="notepad.jpg" alt="Notepad">
+    <h3>Notepad</h3>
+    <button class="addToCart" type="button" data-name="Notepad" data-price="5940">Add to Cart - &#8369;5940</button>
+  </div>
+  <div class="proDis">
+    <img src="pens.jpg" alt="Pens">
+    <h3>Pens</h3>
+    <button class="addToCart" type="button" data-name="Pens" data-price="5885">Add to Cart - &#8369;5885</button>
+  </div>
+  <div class="proDis">
+    <img src="washitape.jpg" alt="Washitape">
+    <h3>Washitape</h3>
+    <button class="addToCart" type="button" data-name="Washitape" data-price="5830">Add to Cart - &#8369;5830</button>
+  </div>
+</div>
+<h4>Skincare Products</h4>
+<div class="category-container">
+  <div class="proDis">
+    <img src="facialmask.png" alt="H.K. Facial Mask">
+    <h3>H.K. Facial Mask</h3>
+    <button class="addToCart" type="button" data-name="H.K. Facial Mask" data-price="17160">Add to Cart - &#8369;17160</button>
+  </div>
+  <div class="proDis">
+    <img src="fullset.png" alt="H.K. Skincare Set">
+    <h3>H.K. Skincare Set</h3>
+    <button class="addToCart" type="button" data-name="H.K. Skincare Set" data-price="19250">Add to Cart - &#8369;19250</button>
+  </div>
+  <div class="proDis">
+    <img src="headband.png" alt="Sanrio Character Headband">
+    <h3>Sanrio Character Headband</h3>
+    <button class="addToCart" type="button" data-name="Sanrio Character Headband" data-price="17050">Add to Cart - &#8369;17050</button>
+  </div>
+  <div class="proDis">
+    <img src="moisturizer.png" alt="H.K. Moisturizer">
+    <h3>H.K. Moisturizer</h3>
+    <button class="addToCart" type="button" data-name="H.K. Moisturizer" data-price="17710">Add to Cart - &#8369;17710</button>
+  </div>
+  <div class="proDis">
+    <img src="toner.png" alt="H.K. Toner">
+    <h3>H.K. Toner</h3>
+    <button class="addToCart" type="button" data-name="H.K. Toner" data-price="17600">Add to Cart - &#8369;17600</button>
+  </div>
+</div>
+</div>
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-4">
+      <h3>Cart</h3>
+      <ul id="cart" class="list-group">
+      </ul>
+        <p>Total: &#8369;<span id="cart-total">0</span></p>
+    </div>
+    <div class="col-md-8">
+      <h3>Delivery Details</h3>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" id="name" name="cust_name" class="form-control" required>
+      </div>
+    <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" id="email" name="cust_email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label for="address" class="form-label">Delivery Address</label>
+        <input type="text" id="address" name="cust_addr" class="form-control" required>
+      </div>
+        <input type="hidden" id="order-data" name="cust_order">
+      <div>
+        <button class="btn btn-primary me-2" id="place-order-button" type="submit">Place Order</button>
+      </div>
+    </div>
+  </div>
+</div>
+</form>
+
+<script>
+let cart = [];
+let total = 0;
+
+// Function to add item to cart
+function addItemToCart(name, price) {
+  cart.push({ name: name, price: price });
+  total += price;
+  updateCart();
+}
+
+// Function to remove item from cart
+function removeItemFromCart(index) {
+  const removedItem = cart.splice(index, 1)[0]; // Remove the item and get it
+  total -= removedItem.price;
+  updateCart();
+}
+
+// Function to update the cart display
+function updateCart() {
+  const cartList = document.getElementById("cart");
+  cartList.innerHTML = ""; // Clear the cart
+  cart.forEach((item, index) => {
+    const listItem = document.createElement("li");
+    listItem.className = "list-group-item d-flex justify-content-between align-items-center";
+    listItem.innerHTML = ${item.name} - &#8369;${item.price.toLocaleString('en-US')};
+
+    const removeButton = document.createElement("button");
+    removeButton.className = "remove-item";
+    removeButton.textContent = "Remove";
+    removeButton.dataset.index = index; // Store the index for removal
+    removeButton.onclick = () => removeItemFromCart(index); // Attach the event listener
+    listItem.appendChild(removeButton);
+
+    cartList.appendChild(listItem);
+  });
+  document.getElementById("cart-total").textContent = total.toLocaleString('en-US');
+    // Disable the place order button if the cart is empty
+    document.getElementById("place-order-button").disabled = cart.length === 0;
+}
+
+// Event listener for "Add to Cart" buttons
+const addToCartButtons = document.querySelectorAll(".addToCart");
+addToCartButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const name = button.dataset.name;
+    const price = parseFloat(button.dataset.price); // Parse price as a float
+    addItemToCart(name, price);
+  });
+});
+
+// Event listener for the "Place Order" button
+document.getElementById("place-order-button").addEventListener("click", (event) => {
+    if (cart.length === 0) {
+        alert("Your cart is empty!");
+        event.preventDefault(); // Prevent form submission if cart is empty
+        return;
+    }
+
+    const name = document.getElementById("name").value;
+    const address = document.getElementById("address").value;
+     const email = document.getElementById("email").value;
+
+
+    // Basic validation
+    if (!name || !address || !email) {
+        alert("Please fill in all delivery details.");
+        event.preventDefault(); // Prevent form submission
+        return;
+    }
+
+    // Convert the cart data to JSON string
+    const orderData = JSON.stringify(cart);
+    document.getElementById("order-data").value = orderData; // Set the value of the hidden input field
+
+    // Optionally, you can display a confirmation message
+    const confirmationMessage = `
+        Name: ${name}
+        Address: ${address}
+        Email: ${email}
+        Order: ${orderData}
+        Total: &#8369;${total.toLocaleString('en-US')}
+    `;
+    alert("Order placed! Details: " + confirmationMessage);
+});
+</script>
+</body>
+</html>
